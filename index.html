@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- SEO & Open Graph -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Portofolio pribadi Muhamad Arjulfuadi - Web Developer, pengalaman, karya, kontak, keahlian, dan riwayat pendidikan.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portofolio: Muhamad Arjulfuadi">
+    <meta property="og:image" content="foto-arjulfuadi.jpg">
+    <title>Portofolio | Muhamad Arjulfuadi</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Contoh penggunaan <abbr> untuk istilah HTML -->
+    <!-- Komentar SEO & OpenGraph untuk penjelasan Head -->
+</head>
+<body>
+    <!-- Header menggunakan struktur semantic HTML -->
+    <header>
+        <h1 tabindex="0">Muhamad Arjulfuadi</h1> <!-- Hanya 1 h1; tabindex untuk aksesibilitas; aria-label dipakai di nav -->
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#projects">Karya</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main konten semantik -->
+    <main>
+        <!-- Bagian sekunder: Tentang Saya -->
+        <section id="about" aria-labelledby="judul-about">
+            <h2 id="judul-about">Tentang Saya</h2>
+            <article>
+                <img src="IMG-20250929-WA0043.jpg" width="200">
+                <p>Saya Muhamad Arjulfuadi, seorang <abbr title="HyperText Markup Language">HTML</abbr> & <abbr title="JavaScript">JS</abbr> developer dari Yogyakarta. 
+                Saya berpengalaman membangun untuk tidur dan mengutamakan mimpi indah. 
+                Saya percaya bahwa KING MU Juara Liga.</p>
+                <!-- Komentar: <img> pakai alt descriptive, penggunaan <abbr> untuk accessibility pada istilah -->
+            </article>
+            <aside aria-label="Info singkat" tabindex="0">
+                <strong>Email:</strong> muhamadarjulfuadi@gmail.com<br>
+                <strong>Telepon:</strong> 0812-2456-6698<br>
+                <strong>Tanggal Lahir:</strong> <time datetime="2006-02-26">26 Febuari 2006</time>
+                <!-- time untuk aksesibilitas tanggal -->
+            </aside>
+        </section>
+
+        <!-- Seksi pengalaman/riwayat pendidikan dengan tabel lengkap -->
+        <section id="experience" aria-labelledby="judul-pengalaman">
+            <h2 id="judul-pengalaman">Riwayat Pendidikan & Pengalaman Kerja</h2>
+            <table aria-describedby="deskripsi-tabel">
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Institusi/Perusahaan</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022 - 2025</td>
+                        <td>SMKT Al-Ikhwan</td>
+                        <td>Lulus Teknik Komputer Jaringan</td>
+                
+                    <tr>
+                        <td colspan="3">Freelance: Pembuatan Landing Page untuk <em>UKM</em> (2024-2025)</td>
+                        <!-- Colspan digunakan (kolom 1 baris) -->
+                    </tr>
+                </tbody>
+                </tfoot>
+            </table>
+            <!-- Komentar: Mandatory table dengan caption, colspan, thead/bod/foot -->
+        </section>
+
+        <!-- Seksi keahlian sebagai daftar list dan description list -->
+        <section id="skills">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>Fans KING MU</li>
+            </ul>
+
+            <!-- Komentar: Wajib ul, dl-dt-dd sesuai deskripsi -->
+        </section>
+
+        <!-- Projek/karya wajib ada gambar/iframe dan link ke proyek -->
+        <section id="projects">
+            <h2>Karya/Projek</h2>
+            <article>
+                <header>
+                    <h3>Landing Page UKM</h3>
+                </header>
+                <p>Landing page modern untuk pelaku UKM, dibuat menggunakan HTML & CSS murni.</p>
+                <img src="landing-page-umkn-25191301.jpg" alt="Tampilan landing page UKM hasil karya Arjulfuadi" width="300">
+                <br>
+            </article>
+            <article>
+                <header>
+                    <h3>Tutorial YouTube: Membuat Form Validasi</h3>
+                </header>
+                <p>Tutorial validasi form sederhana untuk pemula, sudah ramah aksesibilitas.</p>
+                <!-- Embed YouTube menggunakan <iframe> -->
+                <iframe width="320" height="180" src="https://youtu.be/T8GiVKisqb0?si=sOwrVJCHv8NQnQJF" 
+                    title="Tutorial Validasi Form HTML" frameborder="0" allowfullscreen aria-label="Video tutorial validasi form HTML"></iframe>
+                <br>
+                <a href="https://youtu.be/T8GiVKisqb0?si=sOwrVJCHv8NQnQJF" target="_blank" rel="noopener">Channel YouTube</a>
+            </article>
+            <!-- Komentar: Pakai <img> alt, link target="_blank", iframe konten -->
+        </section>
+
+        <!-- Multimedia, contoh video -->
+        <section id="multimedia">
+            <h2>Video Demo Portofolio</h2>
+            <video controls width="320">
+                <source src="video-demo.mp4" type="video/mp4">
+                Maaf browser tidak mendukung video tag.
+            </video>
+            <!-- Komentar: Wajib ada multimedia, pakai video atau audio -->
+        </section>
+
+        <!-- Formulir kontak wajib accessibility, validasi, fieldset, legend, dll -->
+        <section id="contact">
+            <h2>Kontak</h2>
+            <form aria-labelledby="form-contact" action="#" method="post">
+                <fieldset>
+                    <legend id="form-contact">Formulir Kontak Saya</legend>
+                    <!-- Input Nama -->
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required minlength="3" maxlength="30" aria-describedby="namaHelp"><br>
+                    <span id="namaHelp">Masukkan nama antara 3-30 karakter</span><br>
+
+                    <!-- Input Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <!-- Input Nomor HP -->
+                    <label for="nomor">Nomor HP:</label>
+                    <input type="tel" id="nomor" name="nomor" required placeholder="08XXXXXXXXXX" pattern="[0-9]{10,13}" aria-describedby="nomorHelp"><br>
+                    <span id="nomorHelp">Format: 10-13 digit angka</span><br>
+
+                    <!-- Textarea Pesan -->
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" required minlength="10" maxlength="200"></textarea><br>
+
+                    <!-- Checkbox Persetujuan -->
+                    <input type="checkbox" id="persetujuan" name="persetujuan" value="setuju" required>
+                    <label for="persetujuan">Saya menyetujui kebijakan privasi</label><br>
+
+                    <!-- Radio jenis kontak, wajib accessibility -->
+                    <span id="jenisKontakLabel">Jenis Kontak:</span><br>
+                    <input type="radio" id="saran" name="jenis_kontak" value="saran" aria-labelledby="jenisKontakLabel" required>
+                    <label for="saran">Saran</label>
+                    <input type="radio" id="pertanyaan" name="jenis_kontak" value="pertanyaan" aria-labelledby="jenisKontakLabel">
+                    <label for="pertanyaan">Pertanyaan</label>
+                    <!-- Deskripsi dan legend, aria-labelledby membimbing navigasi pembaca layar -->
+                </fieldset>
+                <button type="submit">Kirim</button>
+            </form>
+            <!-- Komentar: Validasi required, min/max length, radio, checkbox, form a11y -->
+        </section>
+    </main>
+
+    <!-- Footer semantik -->
+    <footer>
+        <p>&copy; <time datetime="2025">2025</time> Muhamad Arjulfuadi. Dibuat dengan HTML murni. 
+            <abbr title="Accessibility">A11Y</abbr>-tested.</p>
+        <!-- Komentar: copyright pakai time dan abbr -->
+    </footer>
+</body>
+</html>
